@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#container {
+    display: grid;
+    grid-template: 100px 100px 100px / 100px 100px 100px;
+}
+
+.tile {
+    border: 1px black solid;
+}
+
+.tile:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.tile:nth-child(-n+3) {
+    border-top: none;
+}
+
+.tile:nth-child(n+7) {
+    border-bottom: none;
+}
+
+.tile:nth-child(3n+1) {
+    border-left: none;
+}
+
+.tile:nth-child(3n) {
+    border-right: none;
+}
+
+#restart {
+    max-width: 100px;
+}
